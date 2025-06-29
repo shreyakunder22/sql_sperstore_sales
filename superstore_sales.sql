@@ -1,19 +1,3 @@
-
-Sales Data Analysis Using SQL
-
-Objective
-The goal of this project is to create a clean and structured SQL database for analyzing sales data. It focuses on identifying and removing incomplete records, then using SQL queries to explore sales trends by category, region, customer, and product. The objective is to uncover insights that support better business decisions and strategy.
-
-Project Goals:
-* Create and manage a relational database to analyze retail order data.
-* Clean the dataset by identifying and removing null or incomplete records.
-* Perform exploratory data analysis to understand sales trends and customer behavior.
-* Answer key business questions to provide actionable insights using SQL queries.
-
-Technologies Used:
-* SQL (PostgreSQL / MySQL compatible)
-
--- Create database
 CREATE DATABASE SalesDB;
 
 -- CREATE TABLE
@@ -39,6 +23,7 @@ CREATE TABLE orders (
 );
 
 -- Data cleaning 
+
 -- 1.Find NULL Values
 SELECT * FROM orders
 WHERE 
@@ -112,11 +97,5 @@ GROUP BY City
 ORDER BY Total_Sales DESC
 LIMIT 5;
 
-Conclusion
-This project successfully demonstrates how SQL can be used to clean and analyze sales data. Key insights were gained on top customers, best-selling products, and regional sales trends, helping to support data-driven business decisions.
 
-Future Improvements:
-* Add time-based sales trend analysis (monthly/quarterly).
-* Analyze profit margins (if profit data is available).
-* Include customer segmentation analysis.
-* Visualize the SQL results using BI tools like Tableau or Power BI.
+
